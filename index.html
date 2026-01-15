@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meu Bloco</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <header class="sidebar-header">
+        <div class="brand">
+          <div class="dot"></div>
+          <span>Meu Bloco</span>
+        </div>
+
+        <button id="btnNew" class="btn primary" title="Nova nota (Ctrl+N)">
+          + Nova
+        </button>
+      </header>
+
+      <div class="sidebar-tools">
+        <input id="search" class="input" placeholder="Buscar notas..." />
+      </div>
+
+      <ul id="notesList" class="notes"></ul>
+
+      <footer class="sidebar-footer">
+        <div class="hint">
+          <span>Ctrl+S</span> salvar · <span>Ctrl+F</span> buscar · <span>Ctrl+N</span> nova
+        </div>
+      </footer>
+    </aside>
+
+    <main class="main">
+      <header class="main-header">
+        <input id="title" class="title" placeholder="Título da nota..." />
+        <div class="actions">
+          <button id="btnRename" class="btn" title="Renomear">Renomear</button>
+          <button id="btnDelete" class="btn danger" title="Apagar">Apagar</button>
+        </div>
+      </header>
+
+      <section class="editor-wrap">
+        <textarea id="content" class="editor" placeholder="Escreva aqui..."></textarea>
+
+        <div class="statusbar">
+          <span id="status">Pronto</span>
+          <span id="meta">0 caracteres</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
